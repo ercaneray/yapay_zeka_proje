@@ -146,7 +146,7 @@ print({
     "ROC AUC": roc_auc_karar_agaci
 })
 
-# 5. ROC Eğrisi Çizimi
+# 5. ROC Doğrusu Çizimi
 fpr_karar_agaci, tpr_karar_agaci, _ = roc_curve(y_test, y_olasilik_karar_agaci)
 plt.figure(figsize=(8, 6))
 plt.plot(fpr_karar_agaci, tpr_karar_agaci, label=f"ROC Eğrisi (AUC = {roc_auc_karar_agaci:.2f})", color="green")
